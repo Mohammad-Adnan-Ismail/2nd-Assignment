@@ -1,27 +1,26 @@
-ul{
-    list-style-type:none;
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-ul,li{
-    float: right;
-    padding:20px;
-    font-weight: 800px;
-    margin-top: -43px;
-    margin-right: 60px;
+.head,a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
     font-weight: bolder;
+    margin-right: 80px;
+}
 
-    
-  
-}
-ul,li,a{
-    text-decoration:none ;
-    color: #3A3A3A;
-}
 body{
-    margin-left: 290px;
-    margin-right: 60px;
-    margin-top: 250px;
+    
+    margin-top: 50px;
     font-family: 'Poppins', sans-serif;
     background-color: #fffcfc;
+}
+main{
+    margin-left: 200px;
+    margin-right: 100px;
+    flex-wrap: nowrap;
 }
 
 .container-1{
@@ -57,12 +56,28 @@ body{
 }
 .main-camera{
     width: 600px;
+    height: 400px;
     margin-left: 340px;
     background: url('../images/Circle\ design.svg');
     background-repeat: no-repeat;
-    
+    transition: all .2s ease-in-out ;
 
-    
+}
+.main-camera:hover{
+    width: 700px;
+    height: 600px;
+    transform: scale(1.1);
+}
+.logos{
+    border: 0px solid gray;
+    box-shadow:0px 1px  rgb(192, 189, 189);
+}
+.logos,ul,li{
+    display: flex;
+    list-style-type: none;
+    padding-right:0px;
+    margin-right: 115px;
+    margin-top:170px;
 }
 .collection{
     font-weight: 600px;
@@ -102,7 +117,9 @@ body{
     padding: 10px;
     border-radius: 10px;
     box-shadow:2.5px 2.5px 2.5px 2.5px rgb(189, 181, 181);
+
 }
+
 .discount{
     
     font-weight: bold;
@@ -124,4 +141,30 @@ body{
 }
 .special{
     margin-right: 30px;
+}
+.see{
+    color: #E02C6D;
+    margin-left: 1300px;
+    margin-top: 70px;
+}
+
+footer{
+    width: 100%;
+    height: 140px;
+    text-align: center;
+    background-color: rgb(1, 1, 59);
+    color: white;
+    font-family: Poppins;
+}
+.fab {
+    margin: 10px;
+
+}
+@media only screen and (max-width:688px) {
+    body{
+        width: 100%
+    };
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
